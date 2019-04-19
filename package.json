@@ -1,0 +1,29 @@
+{
+  "name": "prop65bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmnd/prop65bot.git"
+  },
+  "author": "David Roizenman <david@hmnd.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/hmnd/prop65bot/issues"
+  },
+  "homepage": "https://github.com/hmnd/prop65bot#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "telegraf": "^3.29.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "5.3.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
