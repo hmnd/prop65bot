@@ -27,7 +27,7 @@ bot.on('inline_query', (ctx) => {
       },
     ],
     {
-      cache_time: 31557600,
+      cache_time: 0,
     },
   );
 });
