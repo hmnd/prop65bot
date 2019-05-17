@@ -19,7 +19,6 @@ const capitalizeFirst = str => str
 
 const prop65Format = (msg) => {
   const normMsg = capitalizeFirst(msg.trim());
-  console.info(auxVerbRe.exec(normMsg));
   return normMsg.concat(auxVerbRe.exec(normMsg) ? '' : ' is', prop65Str);
 };
 
