@@ -25,22 +25,24 @@ const prop65Format = (msg) => {
 bot.on('inline_query', (ctx) => {
   const { query } = ctx.inlineQuery;
   const result = prop65Format(query);
-  return ctx.answerInlineQuery(
-    [
-      {
-        id: uuid(query, UUID_NAMSEPACE),
-        type: 'article',
-        title: 'Send Cancer',
-        description: result,
-        input_message_content: {
-          message_text: result,
+  return ctx
+    .answerInlineQuery(
+      [
+        {
+          id: uuid(query, UUID_NAMSEPACE),
+          type: 'article',
+          title: 'Send Cancer',
+          description: result,
+          input_message_content: {
+            message_text: result,
+          },
         },
+      ],
+      {
+        cache_time: 0,
       },
-    ],
-    {
-      cache_time: 0,
-    },
-  );
+    )
+    .catch(err => console.error(err));
 });
 
 bot.launch();
